@@ -1,4 +1,6 @@
-# Progressive Web AMPs - 渐进增强式AMP
+---
+title: Progressive Web AMPs - 渐进增强式AMP
+---
 
 如果你最近一直在关注web开发社区新动态，你可能会读到不少关于[PWA(progressive web apps)](https://www.smashingmagazine.com/2016/08/a-beginners-guide-to-progressive-web-apps/)的文章。
 > 注: PWA是一种通过最大化利用浏览器自身能力，通过渐进增强的方式，来达到类app体验的技术体系，它可以实现: 离线访问，添加到桌面，消息推送, 全屏展示等。

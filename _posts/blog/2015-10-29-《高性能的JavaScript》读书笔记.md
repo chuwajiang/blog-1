@@ -1,4 +1,4 @@
-####第1章 加载与执行
+#### 第1章 加载与执行
 
 当浏览器遇到`<script>`标签时，当前HTML页面无从获知JavaScript是否会向页面动态添加元素，因此，这时它会停止处理页面，先执行JavaScript代码，然后再继续解析和渲染页面。同样的情况也发生在使用scc属性加载JavaScript的过程中。
 
@@ -52,7 +52,7 @@ xhr.onreadystatechange = function () {
 存在跨域问题
 
 ----------------------
-####第2章 数据访问
+#### 第2章 数据访问
 管理作用域：如果某个跨作用域的的值在函数中被引用一次以上，那么就把它存储到局部变量里，如document。
 
 其他能改变作用域链的方法：with,try- catch,eval(eval可以通过`eval("var window = {};")`来动态改变作用域，一般情况下要避免使用它们。
@@ -79,7 +79,7 @@ JavaScript中的对象都是基于原型的。
 
 
 ----------------------
-####第3章 DOM编程
+#### 第3章 DOM编程
 
 减少DOM的访问次数，把运算尽量留在ECMAcript这一端处理。
 
@@ -186,7 +186,7 @@ document.getElementById('menu').onclick = function(e) {
 ```
 
 ----------------------
-####第4章 算法和流程控制
+#### 第4章 算法和流程控制
 
 for-in循环只有其它类型循环的性能的1/7
 
@@ -244,7 +244,7 @@ function memfactorial(n) {
 
 ----------------------
 
-####第5章 字符串和正则表达式
+#### 第5章 字符串和正则表达式
 
 用+号连接字符串时，将变量放在左边，避免使用+=写法（IE7以前不适用）可以提升性能。
 
@@ -501,7 +501,7 @@ function createXhrObject() {
 
 ------------------------------
 
-####第8章 编程实践
+#### 第8章 编程实践
 
 > 当在Javascript中执行另一段Javascript代码时，会导致双重求值的性能消耗。有四种方法：eval, Function, setTimeout, setInterval，所以应避免给它们传递字符串代码。
 
@@ -590,7 +590,7 @@ var removeHandler = document.body.removeEventListener ?
 
 ---------------------
 
-####第10章 工具
+#### 第10章 工具
 
 
 * new Date方式

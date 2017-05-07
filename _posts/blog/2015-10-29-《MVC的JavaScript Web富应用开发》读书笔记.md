@@ -1,4 +1,4 @@
-###第1章 MVC和类
+### 第1章 MVC和类
 
 [Holla(一个聊天应用)](http://github.com/maccman/holla)贯穿本书始终，它用到并实现了：
 
@@ -28,6 +28,7 @@ MVC是一种设计模式，它将应用划分为3个部分：数据（模型）�
 
 
 使用代理保持上下文
+
 ```javascript
 var proxy = function(func, thisObject) {
     return(function() {
@@ -40,12 +41,14 @@ var proxy = function(func, thisObject) {
 
 模型中的数据也是面向对象的(object oriented),如下：
 不要这样做：
+
 ```javascript
 var user = users['foo'];
 destoryUser(user);
 ```
 
 而要这样做：
+
 ```javascript
 var user = User.find('foo');
 user.destory();
@@ -66,6 +69,7 @@ new运算会改变函数执行上下文，同时也会改变return语句的行�
 `class`一直是保留字，虽然它从未被实现过
 
 一种继承的简易实现:
+
 ```javascript
 var Class = function() {
     var klass = function() {
@@ -148,7 +152,7 @@ if (!Function.prototype.bind) {
 
 ______________________________________
 
-###第2章 事件和监听
+### 第2章 事件和监听
 
 不同的浏览器对事件类型支持也不尽同，但所有现代浏览器支持这些事件：
 
@@ -172,6 +176,7 @@ $('.class').trigger('refresh.widget',data);//触发自定义事件
 
 自定义事件和jQuery插件
 html:
+
 ```html
 <ul id="tabs">
     <li data-tab="users">Users</li>
@@ -180,6 +185,7 @@ html:
 ```
 
 javascript:
+
 ```javascript
 jQuery.fn.tabs = function(control) {
     var element = $(this),
@@ -225,6 +231,7 @@ $(window).bind('hashchange', function() {
 
 ```
 用法：
+
 ```javascript
 
 $("ul#tabs").tabs("#tabContent");
@@ -234,6 +241,7 @@ $("ul#tabs").tabs("#tabContent");
 事件本质上与DOM无关
 
 发布/订阅(Pub/Sub)是一种解耦方法，它有两个参与者：发布者与订阅者
+
 ```javascript
 //jQuery Tiny Pub/Sub
 (function($) {
@@ -258,7 +266,7 @@ $.publish('/some/topic', 'a', 'b', 'c');
 
 _______________
 
-###第3章 模型和数据
+### 第3章 模型和数据
 
 将模型的属性保存至命名空间中可以避免冲突。
 
@@ -267,6 +275,7 @@ _______________
 > 本质上讲，ORM是一个包装了一些数据的对象层，以往ORM常用于抽象SQL数据库，但在这里ORM只是用于抽象JavaScript数据类型。这个额外的层可以通过给它添加自定义的函数数来增强基础数据的功能。比如添加数据的合法性验证，监听，数据持久化及服务器端的回调处理等，以增加代码的重用率。
 
 GUID生成器
+
 ```javascript
 Math.guid = function() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
@@ -337,13 +346,14 @@ WebStorage API:
 
 ____________________
 
-###第4章 控制器和状态
+### 第4章 控制器和状态
 
 > 滑坡理论（slippery slope）：也称为滑坡谬误，是一种逻辑谬论，即不合理地使用连串的因果关系，将"可能性"转换为”必然性“，以达到某种意欲结论。
 
 避免将状态或数据保存在DOM中，这会导致逻辑变得错综复杂且混乱不堪。
 
 模块模式：
+
 ```javascript
 (function($, exports) {
     exports.Foo = "data";
@@ -761,3 +771,4 @@ jQuery支持的浏览器包括：
 单元测试主要用于发现浏览器兼容性bug
 
 断言是测试的核心，理论上来说它是测试用例的子集。
+
