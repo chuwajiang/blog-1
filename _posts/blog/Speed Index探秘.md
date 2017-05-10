@@ -8,7 +8,7 @@ title: Speed Index探秘
 
 关于Speed Index是什么，我们先直接上一张图直观感受一下。
 
-![](media/14944237759510.jpg)
+![](https://sites.google.com/a/webpagetest.org/docs/_/rsrc/1472780187203/using-webpagetest/metrics/speed-index/chart-index-b-small.png)
 
 横轴表示时间，纵轴表示加载完成率，用100%表示。Speed Index就是上图深色区域。
 
