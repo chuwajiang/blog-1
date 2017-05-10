@@ -25,7 +25,7 @@ title: Speed Index探秘
 根据Yohoo早年及Google权威的分析调查，我们现在可以用的策略有以下几个：
 
 1. 尽可能减少资源请求数及首屏资源大小
-2. 首屏资源可以考虑内联（最极端的方式如Google首页那样，全部内联到页面），关于为什么内联性能会好，点击查看(https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-blocking-css)
+2. 首屏资源可以考虑内联（最极端的方式如Google首页那样，全部内联到页面），关于为什么内联性能会好，点击查看[优化关键渲染路径](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
 3. 使用http2的server push特性。
 4. 首屏显示的内容越多对用户体验越好，很多网站惯用的方式是优先加载loading，这其实也是不太理想的方式。
 5. 不重要的资源可以后置，等onload结束之后再加载，采用懒加载也是一个较好的手段。
