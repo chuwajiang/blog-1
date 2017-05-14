@@ -20,7 +20,7 @@ dataSource: .
 markdown_ext: mdxxx # 防止md文件被编译
 
 paginate:     20   # 每页显示20条
-paginate_path: ./page/:num/
+paginate_path: /page/:num/
 permalink:     ./post/:categories/:year-:month-:day-:title:output_ext
 
 rss_path : ./feed.xml
