@@ -44,9 +44,7 @@
 
 
 ```javascript
-
 function Class() {}
-
 Class.extend = function extend(props) {
 
     var prototype = new this();
@@ -100,7 +98,7 @@ Class.extend = function extend(props) {
 
 ```
 function objectPlus(o, stuff) {
-	var F = function(){};
+	var F = function() {};
 	F.prototype = o;
 	var c = new F();
 	c.uber = o;
@@ -121,7 +119,7 @@ const composeMixins = (...mixins) => (
 
 var a = (arg) => { return arg[0] + arg[1] }
 var b = (c) => { return c * c }
-composeMixins(a,b)([1,2])
+composeMixins(a, b)([1,2])
 ```
 
 
@@ -178,6 +176,12 @@ function canUseWebP() {
     }
 }
 ```
+
+
+
+redux
+
+applyyMiddleware 的做用是增强dispatch
 
 
 
